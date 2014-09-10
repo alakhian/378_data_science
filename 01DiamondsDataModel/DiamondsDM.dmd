@@ -1,0 +1,13 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="DiamondsDM" id="4FCEE2C3-A645-615F-26FF-65B8C719F733" version="3.5">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:02:30 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>4FCEE2C3-A645-615F-26FF-65B8C719F733</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="E6BF0072-E777-B7C1-3E36-C860A18A8CE4">
+<designStoragePath>/Diamonds</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
+</OSDM_Design>

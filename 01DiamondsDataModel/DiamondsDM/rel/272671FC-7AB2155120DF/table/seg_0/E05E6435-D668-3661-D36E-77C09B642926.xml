@@ -1,0 +1,145 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="E05E6435-D668-3661-D36E-77C09B642926" name="Diam_Diamonds">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>3A186717-CF90-828E-2FDB-B0C413C23575</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="diamond_id" id="01BCF922-DA16-6AB0-ADED-3297734474ED">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>AB14A337-ABCA-DE0D-CFAD-346853CEE369</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="carat" id="4E5DBBF6-D32C-115F-ACA4-4FA0706FB3C4">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>5A0E6616-6566-086F-4A06-99810A4DC175</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="cut" id="2E8BB386-A9F0-2D7E-EBC6-0BEB516824C1">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>B5D33ADD-A03E-7817-BCC3-93559FC7539C</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A5E0E7-BE8C-C9F6-B506-AE77685DE91F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="color" id="55B5DB2F-1B78-ED2E-09FA-69C124971F02">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>3D1B63BC-E546-2368-D2BE-50F6AB6E28D9</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A5E0E7-BE8C-C9F6-B506-AE77685DE91F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="clarity" id="6773D003-4C48-E03A-9B2C-796FFBEE539D">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>0E109952-EEE2-28B3-9672-3DFBC88C1FE3</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A5E0E7-BE8C-C9F6-B506-AE77685DE91F</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="depth" id="B833E20F-02F0-DFB9-DBA0-E7D94862BD23">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>EF74CEB3-CAC7-3354-0191-CC4D3DB3F0FE</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="tbl" id="1A18F07D-CD52-EDF1-996A-57F06B8FB70E">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>8BA0E6E9-F947-E959-B289-0AC92A6028AD</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="price" id="FAA265C3-6125-BA03-E523-C1E8FDED6013">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>A1A36E18-83E3-206D-D65F-9AEFCA32D5E6</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="x" id="B7C60824-193F-2415-39D3-E9BCF729A203">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>209B0AA9-51F9-186C-710A-DF88EC9BBE36</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="y" id="F78479B3-6343-B05C-80FC-6A9A99816553">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>E1BFDBF3-F8AA-C2CE-7F02-42E6E8D4F8BB</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="z" id="8EFB35A7-DDC3-3607-7AE8-71A52D929855">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>B333A563-4BF6-8998-4454-6A0A9521CE64</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C9DDDB6E-D6DD-D38E-C3BF-4CFA5374E16A" name="Diam_Diamonds_PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>FEAA4D7F-27B8-6AE6-2643-304F833A19C6</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="01BCF922-DA16-6AB0-ADED-3297734474ED"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

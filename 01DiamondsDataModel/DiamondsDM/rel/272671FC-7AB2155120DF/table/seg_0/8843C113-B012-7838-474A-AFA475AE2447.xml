@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="8843C113-B012-7838-474A-AFA475AE2447" name="Diam_Sale">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>38861B1D-3992-93BC-16DB-B1E1BFF144B8</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="sale_id" id="5284053D-7BD2-186F-3566-4AE04B4C0C2D">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>E7309B5C-46AD-B074-E455-99D4D3C03646</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="retailer_id" id="C9F0D6EC-29EE-336D-FA2A-0A0AED4EF00B">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>1464A305-38BA-728D-0C05-22CB2448CEAB</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>D2C56D6D-027D-E2F3-62A3-E92B8181705F</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="126BD541-66C8-F9B9-E3C7-41AE2C9B47ED" referredColumn="D2C56D6D-027D-E2F3-62A3-E92B8181705F"/>
+</associations>
+</Column>
+<Column name="diamond_id" id="A20C0497-D242-C615-6227-D06A1182BB55">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>B56D23FB-7817-BB8D-D77A-8442867D4B6F</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<delegate>01BCF922-DA16-6AB0-ADED-3297734474ED</delegate>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="4018D749-FBAA-5A05-B61A-EC3F64414952" referredColumn="01BCF922-DA16-6AB0-ADED-3297734474ED"/>
+</associations>
+</Column>
+<Column name="sales_date" id="3FB497DE-6905-E447-110A-92304E69AA40">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>0F45F107-CD6A-C71D-2400-733F5CF05709</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="91F61DA5-879A-5DB6-327D-F903E27FFD29" name="Diam_Sale_PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>7427C113-335F-BB6E-B01E-DBEB41764A32</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5284053D-7BD2-186F-3566-4AE04B4C0C2D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="470C176E-20DC-113B-F416-3A9E29223F20" name="Diam_Sale_Diam_Retailer_FK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>EBAE2144-A75E-6A2B-65D0-761DDFB6DAB4</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="C9F0D6EC-29EE-336D-FA2A-0A0AED4EF00B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="27E548AC-C4BA-6DA0-C8F1-F9B098C33DA9" name="Diam_Sale_Diam_Diamonds_FK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>BCF7DB4B-F7CB-BB12-60A4-189FD64A6AF5</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A20C0497-D242-C615-6227-D06A1182BB55"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

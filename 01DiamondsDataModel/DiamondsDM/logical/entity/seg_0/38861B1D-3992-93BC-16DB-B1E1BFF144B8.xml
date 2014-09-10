@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="38861B1D-3992-93BC-16DB-B1E1BFF144B8" name="Diam_Sale">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:25:16 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="sale_id" id="E7309B5C-46AD-B074-E455-99D4D3C03646">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:28:35 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="retailer_id" id="1464A305-38BA-728D-0C05-22CB2448CEAB">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:25:59 UTC</createdTime>
+<generatorID>EBAE2144-A75E-6A2B-65D0-761DDFB6DAB4</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>572BFFA1-41AA-A9CF-23A0-E90CED6EF2AA</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="diamond id" id="B56D23FB-7817-BB8D-D77A-8442867D4B6F">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:26:10 UTC</createdTime>
+<generatorID>BCF7DB4B-F7CB-BB12-60A4-189FD64A6AF5</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>AB14A337-ABCA-DE0D-CFAD-346853CEE369</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="sales_date" id="0F45F107-CD6A-C71D-2400-733F5CF05709">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:25:28 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="7427C113-335F-BB6E-B01E-DBEB41764A32" name="Sale PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:29:58 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>E7309B5C-46AD-B074-E455-99D4D3C03646</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

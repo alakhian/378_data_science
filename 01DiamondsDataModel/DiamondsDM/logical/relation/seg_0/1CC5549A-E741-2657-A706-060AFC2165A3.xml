@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="R1" directorySegmentName="seg_0" id="1CC5549A-E741-2657-A706-060AFC2165A3">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:15:26 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<sourcePk>FEAA4D7F-27B8-6AE6-2643-304F833A19C6</sourcePk>
+<identifying>false</identifying>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>3A186717-CF90-828E-2FDB-B0C413C23575</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>11688F6D-49CD-5F9C-8817-87A74EB9F233</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

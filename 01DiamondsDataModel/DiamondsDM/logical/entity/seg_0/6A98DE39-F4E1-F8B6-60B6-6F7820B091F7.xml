@@ -1,0 +1,61 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="6A98DE39-F4E1-F8B6-60B6-6F7820B091F7" name="Diam_Retailer">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:16:24 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="retailer_id" id="572BFFA1-41AA-A9CF-23A0-E90CED6EF2AA">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:24:07 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="name" id="2F742BAF-768D-B9D0-87D3-617E61E8C313">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:24:25 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="14C2C077-479F-5061-4652-15BAC149C0AF" name="Retailer PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:24:23 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>572BFFA1-41AA-A9CF-23A0-E90CED6EF2AA</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

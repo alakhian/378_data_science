@@ -1,0 +1,189 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="3A186717-CF90-828E-2FDB-B0C413C23575" name="Diam_Diamonds">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>FB3B7EF0-511C-123F-265D-9E32489B10EB</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="diamond id" id="AB14A337-ABCA-DE0D-CFAD-346853CEE369">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>41F1B63F-0D26-26DE-F934-D7E6A7FC3A73</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+</Attribute>
+<Attribute name="carat" id="5A0E6616-6566-086F-4A06-99810A4DC175">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>94F0CF00-090E-FDAB-C27E-E456E9535729</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+<Attribute name="cut" id="B5D33ADD-A03E-7817-BCC3-93559FC7539C">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>9F6648D0-94ED-A3C7-5361-FE78C5AD6D60</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A5E0E7-BE8C-C9F6-B506-AE77685DE91F</domain>
+</Attribute>
+<Attribute name="color" id="3D1B63BC-E546-2368-D2BE-50F6AB6E28D9">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>31260F14-CC3E-94E6-0B37-437017D43742</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A5E0E7-BE8C-C9F6-B506-AE77685DE91F</domain>
+</Attribute>
+<Attribute name="clarity" id="0E109952-EEE2-28B3-9672-3DFBC88C1FE3">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>DA585F92-CAB2-6654-D6CA-EF4C1E13F257</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<domain>15A5E0E7-BE8C-C9F6-B506-AE77685DE91F</domain>
+</Attribute>
+<Attribute name="depth" id="EF74CEB3-CAC7-3354-0191-CC4D3DB3F0FE">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>D7E1171F-B5EE-4129-86A0-E1D0C7BCF85B</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+<Attribute name="tbl" id="8BA0E6E9-F947-E959-B289-0AC92A6028AD">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>29C36CE1-A649-AE2A-A257-00F4611CFD3A</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+<Attribute name="price" id="A1A36E18-83E3-206D-D65F-9AEFCA32D5E6">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>3C006A1D-053A-886F-CE3B-C0EE40E2A22A</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+<Attribute name="x" id="209B0AA9-51F9-186C-710A-DF88EC9BBE36">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>191C002F-E4B3-426F-B608-7A637F185744</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+<Attribute name="y" id="E1BFDBF3-F8AA-C2CE-7F02-42E6E8D4F8BB">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>2980A757-56BD-EB0A-639A-88D8C9E8C851</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+<Attribute name="z" id="B333A563-4BF6-8998-4454-6A0A9521CE64">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:13:35 UTC</createdTime>
+<generatorID>530DA2F9-D61A-4277-5AE8-0FC77D05C71A</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<use>0</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<domain>27EDAD76-7809-77D2-717A-A4D4BD994B78</domain>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FEAA4D7F-27B8-6AE6-2643-304F833A19C6" name="Diamonds PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:14:48 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<engineerTo>
+<item key="272671FC-1F3C-1013-90D3-7AB2155120DF" value="true"/>
+<item key="5D330136-A6BB-2A3A-ED2C-F1D0380F7AF2" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>AB14A337-ABCA-DE0D-CFAD-346853CEE369</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

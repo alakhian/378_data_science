@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.logical.LogicalDesign>
+   <object objectType="Entity" objectID="11688F6D-49CD-5F9C-8817-87A74EB9F233" name="Diam_Purchase" seqName="seg_0"/>
+   <object objectType="Entity" objectID="1F5D0DE5-025D-6A92-B688-019712CB772B" name="Diam_Customer" seqName="seg_0"/>
+   <object objectType="Entity" objectID="38861B1D-3992-93BC-16DB-B1E1BFF144B8" name="Diam_Sale" seqName="seg_0"/>
+   <object objectType="Entity" objectID="3A186717-CF90-828E-2FDB-B0C413C23575" name="Diam_Diamonds" seqName="seg_0"/>
+   <object objectType="Entity" objectID="6A98DE39-F4E1-F8B6-60B6-6F7820B091F7" name="Diam_Retailer" seqName="seg_0"/>
+   <object objectType="Relation" objectID="1CC5549A-E741-2657-A706-060AFC2165A3" name="R1" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BCF7DB4B-F7CB-BB12-60A4-189FD64A6AF5" name="R4" seqName="seg_0"/>
+   <object objectType="Relation" objectID="BEA2693C-7D3E-AD8E-78DD-7B9E5E5D22DB" name="R2" seqName="seg_0"/>
+   <object objectType="Relation" objectID="EBAE2144-A75E-6A2B-65D0-761DDFB6DAB4" name="R3" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.logical.LogicalDesign>

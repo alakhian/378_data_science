@@ -1,0 +1,10 @@
+insert into diam_customer(customer_id, name, gender) values(1, 'Jacob', 'm');
+insert into diam_customer(customer_id, name, gender) values(2, 'Mason', 'm');
+insert into diam_customer(customer_id, name, gender) values(3, 'Ethan', 'm');
+insert into diam_customer(customer_id, name, gender) values(4, 'Noah', 'm');
+insert into diam_customer(customer_id, name, gender) values(5, 'William', 'm');
+insert into diam_customer(customer_id, name, gender) values(6, 'Liam', 'm');
+insert into diam_customer(customer_id, name, gender) values(7, 'Jayden', 'm');
+insert into diam_customer(customer_id, name, gender) values(8, 'Michael', 'm');
+insert into diam_customer(customer_id, name, gender) values(9, 'Alexander', 'm');
+insert into diam_customer(customer_id, name, gender) values(10, 'Aiden', 'm');

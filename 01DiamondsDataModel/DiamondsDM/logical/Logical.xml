@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="58C950AC-8331-C406-4A22-0DB02AFF9B2E" mainViewID="D382B6AE-E3DE-B3E3-E964-325B70FBA1BD">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 18:02:30 UTC</createdTime>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

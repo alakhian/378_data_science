@@ -1,0 +1,14 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="126BD541-66C8-F9B9-E3C7-41AE2C9B47ED" name="Diam_Sale_Diam_Retailer_FK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>EBAE2144-A75E-6A2B-65D0-761DDFB6DAB4</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<containerWithKeyObject>8843C113-B012-7838-474A-AFA475AE2447</containerWithKeyObject>
+<deleteRule>NO ACTION</deleteRule>
+<localFKIndex>470C176E-20DC-113B-F416-3A9E29223F20</localFKIndex>
+<keyObject>C70422D4-53AE-3571-B6B1-88EEA3071803</keyObject>
+<mandatory>false</mandatory>
+<transferable>true</transferable>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

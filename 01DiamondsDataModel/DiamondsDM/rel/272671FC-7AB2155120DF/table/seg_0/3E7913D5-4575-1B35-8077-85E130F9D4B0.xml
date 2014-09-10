@@ -1,0 +1,59 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E7913D5-4575-1B35-8077-85E130F9D4B0" name="Diam_Customer">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>1F5D0DE5-025D-6A92-B688-019712CB772B</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="customer_id" id="807A665D-06FF-0CB0-6D26-2F03E8ABA398">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>41DEF917-6935-2450-DF3B-35F63FA74925</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="D0E8DC4A-A288-4F14-C7D5-C7B64B5B0880">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>5D96DB5D-3246-592B-9B91-ED07FA4F17A8</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="0F958B8A-1CB9-CA32-E4F1-C9C3A614D329">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>35B04C18-0B52-3DEC-6098-C1A235662F66</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="D270A2D5-BCEB-6DB2-06BE-B6BE8E18CBD1" name="Diam_Customer_PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>D8B3C241-2812-FECE-A011-3FF70A9670D5</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="807A665D-06FF-0CB0-6D26-2F03E8ABA398"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

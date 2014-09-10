@@ -1,0 +1,12 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<oracle.dbtools.crest.model.design.relational.RelationalDesign>
+   <object objectType="Table" objectID="1E8E43CC-C97B-59EE-A8DF-8FC2F0142CA0" name="Diam_Retailer" seqName="seg_0"/>
+   <object objectType="Table" objectID="3E7913D5-4575-1B35-8077-85E130F9D4B0" name="Diam_Customer" seqName="seg_0"/>
+   <object objectType="Table" objectID="6A9E682E-F286-67F1-0142-03905D3ACCAF" name="Diam_Purchase" seqName="seg_0"/>
+   <object objectType="Table" objectID="8843C113-B012-7838-474A-AFA475AE2447" name="Diam_Sale" seqName="seg_0"/>
+   <object objectType="Table" objectID="E05E6435-D668-3661-D36E-77C09B642926" name="Diam_Diamonds" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="126BD541-66C8-F9B9-E3C7-41AE2C9B47ED" name="Diam_Sale_Diam_Retailer_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="4018D749-FBAA-5A05-B61A-EC3F64414952" name="Diam_Sale_Diam_Diamonds_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="A87D522D-F0F9-35AF-7271-05EB109AFA0B" name="Diam_Purchase_Diam_Customer_FK" seqName="seg_0"/>
+   <object objectType="FKIndexAssociation" objectID="CAF596D0-AD84-E6E1-7C9F-89743EA0E152" name="Diam_Purchase_Diam_Diamonds_FK" seqName="seg_0"/>
+</oracle.dbtools.crest.model.design.relational.RelationalDesign>

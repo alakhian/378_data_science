@@ -1,0 +1,47 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="1E8E43CC-C97B-59EE-A8DF-8FC2F0142CA0" name="Diam_Retailer">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>6A98DE39-F4E1-F8B6-60B6-6F7820B091F7</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="retailer_id" id="D2C56D6D-027D-E2F3-62A3-E92B8181705F">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>572BFFA1-41AA-A9CF-23A0-E90CED6EF2AA</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="ED1869DA-1411-C576-4CAB-4BCB4D9E3276">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>2F742BAF-768D-B9D0-87D3-617E61E8C313</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>250</dataTypeSize>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C70422D4-53AE-3571-B6B1-88EEA3071803" name="Diam_Retailer_PK">
+<createdBy>pcannata</createdBy>
+<createdTime>2014-09-05 22:46:46 UTC</createdTime>
+<generatorID>14C2C077-479F-5061-4652-15BAC149C0AF</generatorID>
+<ownerDesignName>DiamondsDM</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2C56D6D-027D-E2F3-62A3-E92B8181705F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
