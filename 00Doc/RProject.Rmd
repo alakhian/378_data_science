@@ -3,7 +3,7 @@ output: html_document
 ---
 Data Science Fall 2014 R Project
 ===
-**This project analyzes the Diamonds data from the ggplot2 package which has been supplemented with additional synthetic data and stored in an Oracle database.**
+**This project analyzes the Consumer Financial Complaints data from the ggplot2 package which has been supplemented with additional synthetic data and stored in an Oracle database.**
 
 ###This is how my RStudio is configured:
 ```{r}
@@ -13,13 +13,13 @@ sessionInfo()
 ###These are the packages I load from .Rprofile:
 ```{r}
 # To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:/Users/Margui/Documents/Data Sci/Project 1/")
-system("cat .Rprofile", intern = TRUE)
+setwd("C:/Users/Amar/Desktop/Fall 2014/378 - Data Science/378_data_science")
+system("type .Rprofile", intern = TRUE)
 ```
 
 ###Diamonds Data Model
 
-![](./DiamondsDataModel.png)  
+![](./ConsumerComplainDataModel.png)  
 
 ###Diamonds Data 
 
@@ -27,15 +27,15 @@ system("cat .Rprofile", intern = TRUE)
 
 ```{r}
 # To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("~/Mine/UT/GitRepositories/DataScienceFall2014/RProject/02DiamondsData")
-system("cat Diamonds.ddl", intern = TRUE)
+setwd("C:/Users/Amar/Desktop/Fall 2014/378 - Data Science/378_data_science/02ComplainData")
+system("cat ConsumerComplain.ddl", intern = TRUE)
 ``` 
 
-####First few rows of Diamonds.dml
+####First few rows of Complaints.dml
 
 ```{r}
 # To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("~/Mine/UT/GitRepositories/DataScienceFall2014/RProject/02DiamondsData")
+setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
 system("head Diamonds.dml.head", intern = TRUE)
 ``` 
 
@@ -43,7 +43,7 @@ system("head Diamonds.dml.head", intern = TRUE)
 
 ```{r, tidy=TRUE}
 # To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("~/Mine/UT/GitRepositories/DataScienceFall2014/RProject/02DiamondsData")
+setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
 # I can't get this to print out properly so I've commented it out for now.
 #system("cat fakeDiamondsData.py", intern = TRUE)
 ``` 
@@ -52,7 +52,7 @@ setwd("~/Mine/UT/GitRepositories/DataScienceFall2014/RProject/02DiamondsData")
 
 ```{r}
 # To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("~/Mine/UT/GitRepositories/DataScienceFall2014/RProject/02DiamondsData")
+setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
 system("cat DiamondsRest.ddl", intern = TRUE)
 ``` 
 
@@ -60,7 +60,7 @@ system("cat DiamondsRest.ddl", intern = TRUE)
 
 ```{r}
 # To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("~/Mine/UT/GitRepositories/DataScienceFall2014/RProject/02DiamondsData")
+setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
 system("head fakeDiamondsData.dml.head", intern = TRUE)
 ``` 
 
