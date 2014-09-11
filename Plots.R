@@ -11,19 +11,13 @@ possibleError <- tryCatch(
   error=function(e) e
 )
 if(!inherits(possibleError, "error")){
-  diamonds <- dbGetQuery(jdbcConnection, "select * from diamonds")
+  nocomplains <- dbGetQuery(jdbcConnection, "select * from
+(select company as Comp, count(complaint_id) as Complains from fin_complaint f, fin_company c where c.company_id = f.company_id
+group by c.company
+order by count(complaint_id) desc)
+where rownum <= 10")
   dbDisconnect(jdbcConnection)
 }
-head(diamonds)
+head(nocomplains)
 
-ggplot(data = diamonds) + geom_histogram(aes(x = carat))
-ggplot(data = diamonds) + geom_density(aes(x = carat, fill = "gray50"))
-ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
-p <- ggplot(diamonds, aes(x = carat, y = price)) + geom_point(aes(color = color))
-p + facet_wrap(~color) # For ~, see http://stat.ethz.ch/R-manual/R-patched/library/base/html/tilde.html and http://stat.ethz.ch/R-manual/R-patched/library/stats/html/formula.html
-p + facet_grid(cut ~ clarity)
-p <- ggplot(diamonds, aes(x = carat)) + geom_histogram(aes(color = color), binwidth = max(diamonds$carat)/30)
-p + facet_wrap(~color) 
-p + facet_grid(cut ~ clarity)
-
-
+ggplot(data = nocomplains, aes(x = COMP, y = COMPLAINS)) + geom_bar(stat="identity")
