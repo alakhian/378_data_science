@@ -3,70 +3,103 @@ output: html_document
 ---
 Data Science Fall 2014 R Project
 ===
-**This project analyzes the Consumer Financial Complaints data from the ggplot2 package which has been supplemented with additional synthetic data and stored in an Oracle database.**
+**This project analyzes the Consumer Financial Complaints data from data.gov that have been supplemented with additional synthetic data and stored in an Oracle database.**
+
+
+
 
 ###This is how my RStudio is configured:
 ```{r}
 sessionInfo()
 ```
 
+
+
+<!-- CHANGE TO YOUR DIRECTORY -->
 ###These are the packages I load from .Rprofile:
 ```{r}
-# To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:/Users/Amar/Desktop/Fall 2014/378 - Data Science/378_data_science")
-system("type .Rprofile", intern = TRUE)
+setwd("C:/Users/GalacticPresident/Documents/CSD/378_data_science") 
+system("cat .Rprofile", intern = TRUE)
 ```
 
-###Diamonds Data Model
 
+
+###Consumer Complaints Data Model
 ![](./ConsumerComplainDataModel.png)  
 
-###Diamonds Data 
 
-####Diamonds.ddl 
 
+
+###Consumer Complaints Data 
+
+
+<!-- CHANGE TO YOUR DIRECTORY ENDING IN /02ComplainData -->
+####ConsumerComplain.ddl 
 ```{r}
-# To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:/Users/Amar/Desktop/Fall 2014/378 - Data Science/378_data_science/02ComplainData")
+setwd("C:/Users/GalacticPresident/Documents/CSD/378_data_science/02ComplainData")
 system("cat ConsumerComplain.ddl", intern = TRUE)
 ``` 
 
-####First few rows of Complaints.dml
 
+<!-- MAYBE SHOW SOME INSERT STATEMENTS AS EXAMPLE DML? -->
 ```{r}
-# To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
-system("head Diamonds.dml.head", intern = TRUE)
+#Displaying some inserts maybe
+```
+
+
+
+<!-- DISPLAY FIRST ROWS OF THE TABLES FROM R, DO HEAD(TABLE) FUNCTIONS -->
+```{r}
+#Displaying some rows from R
+```
+
+
+
+<!-- CANNATA STUFF -->
+<!-- ####First few rows of Complaints.dml -->
+
+
+
+<!-- CANNATA STUFF, CHANGE ECHO TO TRUE TO DISPLAY -->
+```{r, echo=FALSE}
+#setwd("C:/Users/GalacticPresident/Documents/CSD/378_data_science/02DiamondsData")
+#system("head Diamonds.dml.head", intern = TRUE)
 ``` 
 
-####Python script to generate synthetic Diamonds data.
 
-```{r, tidy=TRUE}
-# To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
+<!-- CANNATA STUFF, CHANGE ECHO TO TRUE TO DISPLAY -->
+<!-- ####Python script to generate synthetic Diamonds data. -->
+```{r, tidy=TRUE, echo=FALSE}
+#setwd("C:/Users/GalacticPresident/Documents/CSD/378_data_science/02DiamondsData")
 # I can't get this to print out properly so I've commented it out for now.
 #system("cat fakeDiamondsData.py", intern = TRUE)
 ``` 
 
-####DiamondsRest.ddl 
 
-```{r}
-# To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
-system("cat DiamondsRest.ddl", intern = TRUE)
+<!-- CANNATA STUFF, CHANGE ECHO TO TRUE TO DISPLAY -->
+<!-- ####DiamondsRest.ddl -->
+```{r, echo=FALSE}
+#setwd("C:/Users/GalacticPresident/Documents/CSD/378_data_science/02DiamondsData")
+#system("cat DiamondsRest.ddl", intern = TRUE)
 ``` 
 
-####First few rows of fakeDiamondsData.dml
 
-```{r}
-# To get this to work in your environment, change the following directory/folder path to the path to your project files.
-setwd("C:\Users\Amar\Desktop\Fall 2014\378 - Data Science\378_data_science\02DiamondsData")
-system("head fakeDiamondsData.dml.head", intern = TRUE)
+
+<!-- CANNATA STUFF, CHANGE ECHO TO TRUE TO DISPLAY -->
+<!-- ####First few rows of fakeDiamondsData.dml -->
+```{r, echo=FALSE}
+#setwd("C:/Users/GalacticPresident/Documents/CSD/378_data_science/02DiamondsData")
+#system("head fakeDiamondsData.dml.head", intern = TRUE)
 ``` 
 
-```{r}
-source("../03Analysis/DiamondsAnalysis.R", echo = TRUE)
+
+
+<!-- DON'T CHANGE THIS DIRECTORY, WE DO R ANALYSIS AND DISPLAY OUR PLOTS AND STUFF HERE, CHANGE ECHO TO TRUE TO DISPLAY -->
+```{r, echo=FALSE}
+#source("../03Analysis/DiamondsAnalysis.R", echo = TRUE)
 ```
+
+
 
 ###shiny
 **The shiny R package allows you to build interactive web-based applications using only R with no knowledge of html, css, or javascript needed. You just need to write two scripts (see the example files in the 04Shiny directory):**  
@@ -92,12 +125,15 @@ Instead, you can remotely host shiny apps and then just send people links. Get a
 install_github( repo = "shinyapps", username="rstudio" )  
 shinyapps::setAccountInfo(name='pcannata', token='3ECF447A741004F6A8B7208C9ED778E1', secret='. . . ')**  
 
-```{r}
-library(shinyapps)
-getwd()
+<!-- FILL THIS IN EVENTUALLY IF WE NEED SHINY AND CHANGE ECHO TO TRUE TO DISPLAY -->
+```{r, echo=FALSE}
+#library(shinyapps)
+#getwd()
+
 # Uncomment the following line to deploy the app.
 # deployApp("../04Shiny")
 ```
+
 
 **Now you can try the app at https://pcannata.shinyapps.io/04Shiny/ **  
 
