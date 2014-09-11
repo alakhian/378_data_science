@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 create table complaindata
 ( Complaint_ID varchar(100),
   Product varchar(100), 
