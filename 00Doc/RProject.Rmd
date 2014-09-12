@@ -94,9 +94,9 @@ system("cat ConsumerComplain.ddl", intern = TRUE)
 
 
 
-<!-- DON'T CHANGE THIS DIRECTORY, WE DO R ANALYSIS AND DISPLAY OUR PLOTS AND STUFF HERE, CHANGE ECHO TO TRUE TO DISPLAY -->
-```{r, echo=FALSE}
-#source("../03Analysis/DiamondsAnalysis.R", echo = TRUE)
+<!-- DON'T CHANGE THIS DIRECTORY, WE DO R ANALYSIS AND DISPLAY OUR PLOTS AND STUFF HERE -->
+```{r, echo=TRUE}
+source("../03Analysis/Plots.R", echo = TRUE)
 ```
 
 
