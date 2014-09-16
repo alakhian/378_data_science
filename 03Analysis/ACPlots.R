@@ -11,19 +11,30 @@ possibleError <- tryCatch(
   error=function(e) e
 )
 if(!inherits(possibleError, "error")){
-  diamonds <- dbGetQuery(jdbcConnection, "select * from diamonds")
-  dbDisconnect(jdbcConnection)
+  nocomplains <- dbGetQuery(jdbcConnection, "select * from
+(select company as Comp, count(complaint_id) as Complains from fin_complaint f, fin_company c where c.company_id = f.company_id
+group by c.company
+order by count(complaint_id) desc)
+where rownum <= 10")
 }
-head(diamonds)
-
-ggplot(data = diamonds) + geom_histogram(aes(x = carat))
-ggplot(data = diamonds) + geom_density(aes(x = carat, fill = "gray50"))
-ggplot(diamonds, aes(x = carat, y = price)) + geom_point()
-p <- ggplot(diamonds, aes(x = carat, y = price)) + geom_point(aes(color = color))
-p + facet_wrap(~color) # For ~, see http://stat.ethz.ch/R-manual/R-patched/library/base/html/tilde.html and http://stat.ethz.ch/R-manual/R-patched/library/stats/html/formula.html
-p + facet_grid(cut ~ clarity)
-p <- ggplot(diamonds, aes(x = carat)) + geom_histogram(aes(color = color), binwidth = max(diamonds$carat)/30)
-p + facet_wrap(~color) 
-p + facet_grid(cut ~ clarity)
+head(nocomplains)
 
 
+ggplot(data = nocomplains, aes(x = COMP, y = COMPLAINS, fill = COMP)) + geom_bar(stat="identity")+
+scale_fill_manual(values= c("red1", "blue1", "darkorange", "green", "yellow", "cyan", "black", "purple", "orange", "darkred")) +
+ggtitle("Number of Complaints for the top ten companies")
+
+if(!inherits(possibleError, "error")){
+  datespec <- dbGetQuery(jdbcConnection, "Select EXTRACT(month from date_recieved)as \"Month\", 
+                                          count(complaint_id) as Complaints 
+                                          from fin_complaint  where Extract(year from date_recieved) = 2012
+                                          group by Extract(month from date_recieved)
+                                          order by Extract(month from date_recieved)")
+  
+}
+head(datespec)
+
+ggplot(data = datespec, aes(x = Month, y = COMPLAINTS)) + geom_line() +
+ggtitle("Number of Complaints in 2012")
+
+dbDisconnect(jdbcConnection)
