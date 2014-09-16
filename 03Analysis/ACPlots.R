@@ -22,7 +22,7 @@ head(nocomplains)
 
 ggplot(data = nocomplains, aes(x = COMP, y = COMPLAINS, fill = COMP)) + geom_bar(stat="identity")+
 scale_fill_manual(values= c("red1", "blue1", "darkorange", "green", "yellow", "cyan", "black", "purple", "orange", "darkred")) +
-ggtitle("Number of Complaints for the top ten companies")
+ggtitle("Number of Complaints for the top ten companies") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 if(!inherits(possibleError, "error")){
   datespec <- dbGetQuery(jdbcConnection, "Select * from (Select EXTRACT(month from date_recieved)as \"Month\", 
