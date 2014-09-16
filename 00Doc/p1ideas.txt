@@ -1,0 +1,5 @@
+add more info about data
+investigate florida/age
+look at untimely responses from shiny
+explain heatmap legend
+bring in more data/tables for correlations
