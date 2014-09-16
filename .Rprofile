@@ -1,4 +1,5 @@
-[1] ".GlobalEnv"        "package:shiny"     "package:RJDBC"     "package:rJava"    
-[5] "package:DBI"       "package:ggplot2"   "tools:rstudio"     "package:stats"    
-[9] "package:graphics"  "package:grDevices" "package:utils"     "package:datasets" 
-[13] "package:methods"   "Autoloads"         "package:base"
+library("DBI", lib.loc="~/R/win-library/3.0")
+library("shiny", lib.loc="~/R/win-library/3.0")
+library("ggplot2", lib.loc="~/R/win-library/3.0")
+library("RJDBC", lib.loc="~/R/win-library/3.0")
+library("rJava", lib.loc="~/R/win-library/3.0")
