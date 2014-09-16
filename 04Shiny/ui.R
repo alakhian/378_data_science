@@ -4,19 +4,19 @@ library(shiny)
 
 # Define UI for application that plots random distributions 
 shinyUI(pageWithSidebar(
-
+  
   # Application title
-  headerPanel("Hello Shiny!"),
-
+  headerPanel("Dates"),
+  
   # Sidebar with a slider input for number of observations
   sidebarPanel(
     sliderInput("obs", 
-                "Number of observations:", 
-                min = 2009,
-                max = 2013, 
-                value = 2009)
+                "What Month would you like?:", 
+                min = 1,
+                max = 12, 
+                value = 1)
   ),
-
+  
   # Show a plot of the generated distribution
   mainPanel(
     plotOutput("distPlot")
