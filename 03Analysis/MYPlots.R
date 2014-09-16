@@ -45,14 +45,14 @@ library(sqldf)
 merged <- sqldf('select zip, state, latitude, longitude, COUNT as count from zipcode, ziptable where zip=ZIP_CODE')
 
 #Plotting each zip as a point with color coded count
-g<-ggplot(data=merged) + geom_point(aes(x=longitude, y=latitude, colour=count)) + geom_jitter(mapping=aes(x=longitude, y=latitude),alpha = 0.1) + ggtitle("Complaints by Zip Code in the United States") 
+g<-ggplot(data=merged) + geom_point(aes(x=longitude, y=latitude, colour=count), size=1) + geom_jitter(mapping=aes(x=longitude, y=latitude),alpha = 0.1) + ggtitle("Complaints by Zip Code in the United States") 
 g = g + theme_bw() + scale_x_continuous(limits = c(-125,-66), breaks = NULL)
 g = g + scale_y_continuous(limits = c(25,50), breaks = NULL)
 g = g + labs(x=NULL, y=NULL)
 g
 
 #This just looks like a population map, so try Using alpha transparency to see complaint counts for zip
-g<-ggplot(data=merged) + geom_point(aes(x=longitude, y=latitude, alpha=count)) + geom_jitter(mapping=aes(x=longitude, y=latitude),alpha = 0.1)
+g<-ggplot(data=merged) + geom_point(aes(x=longitude, y=latitude, alpha=count), size=1) + geom_jitter(mapping=aes(x=longitude, y=latitude),alpha = 0.1)
 g = g + theme_bw() + scale_x_continuous(limits = c(-125,-66), breaks = NULL) + ggtitle("Transparent Complaints by Zip Code in the United States") 
 g = g + scale_y_continuous(limits = c(25,50), breaks = NULL)
 g = g + labs(x=NULL, y=NULL)
@@ -77,7 +77,7 @@ mergedsorted[5810:11619, 'level'] <- 2
 mergedsorted[11620:17426, 'level'] <- 3
 
 #Plot again taking population into account
-g<-ggplot(data=mergedsorted) + geom_point(aes(x=longitude, y=latitude, colour=factor(level)), size=2, alpha=1, position=position_jitter(width=.3, height=.3)) + scale_colour_manual(values=c("green", "orange", "red")) + ggtitle("Ratio of Complaints to Population by ZIP Code in the United States") 
+g<-ggplot(data=mergedsorted) + geom_point(aes(x=longitude, y=latitude, colour=factor(level), size=1), size=1, alpha=1, position=position_jitter(width=.3, height=.3)) + scale_colour_manual(values=c("green", "orange", "red")) + ggtitle("Ratio of Complaints to Population by ZIP Code in the United States") 
 g = g + theme_bw() + scale_x_continuous(limits = c(-125,-66), breaks = NULL)
 g = g + scale_y_continuous(limits = c(25,50), breaks = NULL)
 g = g + labs(x=NULL, y=NULL)

@@ -98,7 +98,7 @@ system("cat ConsumerComplain.ddl", intern = TRUE)
 ```{r, echo=TRUE}
 source("../03Analysis/MYPlots.R", echo = TRUE)
 source("../03Analysis/ACPlots.R", echo = TRUE)
-#source("../03Analysis/.R", echo = TRUE)
+source("../03Analysis/ConsumerAnalysis.R", echo = TRUE)
 ```
 
 ```{r, echo=TRUE}

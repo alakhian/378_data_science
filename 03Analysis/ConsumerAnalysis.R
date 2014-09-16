@@ -4,7 +4,7 @@ options(java.parameters="-Xmx2g")
 library(rJava)
 library(RJDBC)
 
-jdbcDriver <- JDBC(driverClass="oracle.jdbc.OracleDriver", classPath="C:/Program Files/Java/jdk1.8.0_05/ojdbc6.jar")
+jdbcDriver <- JDBC(driverClass="oracle.jdbc.OracleDriver", classPath="C:/Program Files/Java/jdk1.7.0_45/ojdbc6.jar")
 
 # In the following, use your username and password instead of "CS347_prof", "orcl_prof" once you have an Oracle account
 possibleError <- tryCatch(
@@ -23,7 +23,7 @@ if(!inherits(possibleError, "error")){
                           complt1.company_id in (select company_id from fin_complaint group by 
                           company_id having count(*) > 5000) group by rollup(company, company_response) 
                           order by company
-  ) where \"response\" is not null;")
+  ) where \"response\" is not null")
   
   products <- dbGetQuery(jdbcConnection, "select * from (select company as \"company\", product as \"product\", 
   (count(*) / (select count(*) from fin_complaint complt2, fin_company compny2 where compny2.company_id = complt2.company_id and
@@ -32,7 +32,7 @@ if(!inherits(possibleError, "error")){
    complt1.company_id in (select company_id from fin_complaint group by 
     company_id having count(*) > 5000) group by rollup(company, product) 
     order by company
-) where \"product\" is not null;")
+) where \"product\" is not null")
   
   respByProduct <- dbGetQuery(jdbcConnection, "select * from (select product as \"product\", company_response as \"response\", 
   (count(*) / (select count(*) from fin_complaint complt2, fin_company compny2 where compny2.company_id = complt2.company_id and
@@ -40,11 +40,10 @@ if(!inherits(possibleError, "error")){
     from fin_complaint complt1, fin_company compny1 where compny1.company_id=complt1.company_id
     group by rollup(product, company_response) 
     order by product
-) where \"response\" is not null;")
+) where \"response\" is not null")
   
   dbDisconnect(jdbcConnection)
 }
-head(complaints)
 
 #library(sqldf)
 #response_data <- sqldf('select * from (select company as \"company\", company_response as \"response\", 
@@ -57,8 +56,8 @@ head(complaints)
 #ggplot(data=complaints,  aes(x=factor(""),
 #                             y=Count, fill = Response) ) + geom_bar(stat="identity")
 
-ggplot(data=products,  aes(x=company, y=percentage, fill = product) ) + geom_bar(stat="identity") + ggtitle("Product Types for Companies With More Than 5000 Complaints") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
-ggplot(data=responses,  aes(x=company, y=percentage, fill = response) ) + geom_bar(stat="identity") + ggtitle("Responses for Companies With More Than 5000 Complaints") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+ggplot(data=products,  aes(x=company, y=percentage, fill = product) ) + geom_bar(stat="identity") + ggtitle("Product Types for Companies With > 5000 Complaints") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
+ggplot(data=responses,  aes(x=company, y=percentage, fill = response) ) + geom_bar(stat="identity") + ggtitle("Responses for Companies With > 5000 Complaints") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 ggplot(data=respByProduct,  aes(x=product, y=percentage, fill = response) ) + geom_bar(stat="identity") + ggtitle("Responses by Product Type") + theme(axis.text.x = element_text(angle = 90, hjust = 1))
 
 
