@@ -1,0 +1,1941 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<workbook source-platform='win' version='8.3' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <!-- build 8200.14.0819.2015                                -->
+  <preferences>
+  </preferences>
+  <datasources>
+    <datasource caption='TAX_STATS+ (C##CS347_ASL456)' inline='true' name='oracle.41918.736499826387' version='8.3'>
+      <connection authentication='RDBMS' class='oracle' port='1521' schema='C##CS347_ASL456' server='128.83.138.158' service='orcl' username='c##cs347_asl456'>
+        <relation join='left' type='join'>
+          <clause type='join'>
+            <expression op='='>
+              <expression op='[TAX_STATS].[ZIPCODE]'>
+              </expression>
+              <expression op='[TAXSTATS].[ZIP]'>
+              </expression>
+            </expression>
+          </clause>
+          <relation name='TAX_STATS' table='[C##CS347_ASL456].[TAX_STATS]' type='table' />
+          <relation name='TAXSTATS' table='[C##CS347_ASL456].[TAXSTATS]' type='table' />
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>STATEFIPS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATEFIPS]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>STATEFIPS</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>2</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIPCODE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIPCODE]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>ZIPCODE</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>5</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AGI_STUB</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[AGI_STUB]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>AGI_STUB</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>1</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N1]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N1</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARS1</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MARS1]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>MARS1</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARS2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MARS2]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>MARS2</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MARS4</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MARS4]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>MARS4</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PREP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PREP]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>PREP</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N2</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N2]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N2</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NUMDEP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NUMDEP]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>NUMDEP</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00100</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00100]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00100</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N00200</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N00200]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N00200</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00200</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00200]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00200</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N00300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N00300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N00300</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00300</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N00600</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N00600]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N00600</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00600</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00600]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00600</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N00650</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N00650]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N00650</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00650</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00650]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00650</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N00900</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N00900]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N00900</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00900</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00900]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00900</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SCHF</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SCHF]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>SCHF</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N01000</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N01000]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N01000</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A01000</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A01000]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A01000</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N01400</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N01400]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N01400</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A01400</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A01400]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A01400</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N01700</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N01700]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N01700</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A01700</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A01700]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A01700</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N02300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N02300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N02300</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A02300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A02300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A02300</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N02500</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N02500]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N02500</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A02500</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A02500]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A02500</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N03300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N03300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N03300</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A03300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A03300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A03300</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N00101</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N00101]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N00101</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A00101</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A00101]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A00101</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N04470</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N04470]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N04470</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A04470</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A04470]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A04470</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N18425</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N18425]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N18425</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A18425</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A18425]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A18425</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N18450</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N18450]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N18450</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A18450</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A18450]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A18450</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N18500</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N18500]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N18500</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A18500</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A18500]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A18500</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N18300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N18300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N18300</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A18300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A18300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A18300</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N19300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N19300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N19300</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A19300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A19300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A19300</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N19700</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N19700]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N19700</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A19700</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A19700]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A19700</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N04800</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N04800]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N04800</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A04800</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A04800]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A04800</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N07100</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N07100]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N07100</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A07100</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A07100]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A07100</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N07220</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N07220]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N07220</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A07220</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A07220]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A07220</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N07180</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N07180]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N07180</remote-alias>
+            <ordinal>59</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A07180</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A07180]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A07180</remote-alias>
+            <ordinal>60</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N07260</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N07260]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N07260</remote-alias>
+            <ordinal>61</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A07260</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A07260]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A07260</remote-alias>
+            <ordinal>62</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N59660</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N59660]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N59660</remote-alias>
+            <ordinal>63</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A59660</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A59660]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A59660</remote-alias>
+            <ordinal>64</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N59720</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N59720]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N59720</remote-alias>
+            <ordinal>65</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A59720</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A59720]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A59720</remote-alias>
+            <ordinal>66</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N11070</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N11070]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N11070</remote-alias>
+            <ordinal>67</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A11070</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A11070]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A11070</remote-alias>
+            <ordinal>68</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N09600</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N09600]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N09600</remote-alias>
+            <ordinal>69</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A09600</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A09600]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A09600</remote-alias>
+            <ordinal>70</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N06500</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N06500]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N06500</remote-alias>
+            <ordinal>71</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A06500</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A06500]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A06500</remote-alias>
+            <ordinal>72</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N10300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N10300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N10300</remote-alias>
+            <ordinal>73</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A10300</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A10300]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A10300</remote-alias>
+            <ordinal>74</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N11901</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N11901]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N11901</remote-alias>
+            <ordinal>75</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A11901</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A11901]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A11901</remote-alias>
+            <ordinal>76</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>N11902</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[N11902]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>N11902</remote-alias>
+            <ordinal>77</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>A11902</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[A11902]</local-name>
+            <parent-name>[TAX_STATS]</parent-name>
+            <remote-alias>A11902</remote-alias>
+            <ordinal>78</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>15</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ZIP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[ZIP]</local-name>
+            <parent-name>[TAXSTATS]</parent-name>
+            <remote-alias>ZIP</remote-alias>
+            <ordinal>79</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MEDIAN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MEDIAN]</local-name>
+            <parent-name>[TAXSTATS]</parent-name>
+            <remote-alias>MEDIAN</remote-alias>
+            <ordinal>80</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MEAN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MEAN]</local-name>
+            <parent-name>[TAXSTATS]</parent-name>
+            <remote-alias>MEAN</remote-alias>
+            <ordinal>81</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>POP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[POP]</local-name>
+            <parent-name>[TAXSTATS]</parent-name>
+            <remote-alias>POP</remote-alias>
+            <ordinal>82</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>0</scale>
+            <width>256</width>
+            <contains-null>true</contains-null>
+            <padded-semantics>true</padded-semantics>
+            <collation charset='1' flag='0' name='binary' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;SQLT_CHR{charset=178,charform=1}&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column aggregation='CountD' caption='Agi Stub' datatype='integer' datatype-customized='true' name='[AGI_STUB]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Mars1' datatype='string' name='[MARS1]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Mars2' datatype='string' name='[MARS2]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Mars4' datatype='string' name='[MARS4]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Mean' datatype='string' name='[MEAN]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Median' datatype='string' name='[MEDIAN]' role='dimension' type='nominal'>
+      </column>
+      <column aggregation='CountD' datatype='integer' datatype-customized='true' name='[N1]' role='measure' type='quantitative'>
+      </column>
+      <column caption='Numdep' datatype='string' name='[NUMDEP]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Prep' datatype='string' name='[PREP]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Schf' datatype='string' name='[SCHF]' role='dimension' type='nominal'>
+      </column>
+      <column caption='Statefips' datatype='string' name='[STATEFIPS]' role='dimension' type='nominal'>
+      </column>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column aggregation='CountD' caption='Zipcode' datatype='integer' datatype-customized='true' name='[ZIPCODE]' role='measure' semantic-role='[ZipCode].[Name]' type='quantitative'>
+      </column>
+      <column datatype='string' name='[ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+      </column>
+      <layout dim-ordering='alphabetic' dim-percentage='0.5' measure-ordering='alphabetic' measure-percentage='0.4' rowDisplayCount='10000' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+    </datasource>
+  </datasources>
+  <datasource-relationships>
+    <datasource-dependencies datasource='oracle.41918.736499826387'>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' type='nominal'>
+      </column>
+      <column datatype='string' name='[ZIP]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+      </column>
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ZIP]' derivation='None' name='[none:ZIP:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-dependencies datasource='oracle.41918.748224247684'>
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal'>
+      </column>
+      <column caption='Zip Code' datatype='string' name='[ZIP_CODE]' role='dimension' semantic-role='[ZipCode].[Name]' type='nominal'>
+      </column>
+      <column-instance column='[STATE]' derivation='None' name='[none:STATE:nk]' pivot='key' type='nominal' />
+      <column-instance column='[ZIP_CODE]' derivation='None' name='[none:ZIP_CODE:nk]' pivot='key' type='nominal' />
+    </datasource-dependencies>
+    <datasource-relationship source='oracle.41918.736499826387' target='oracle.41918.748224247684'>
+      <column-mapping>
+        <map key='[oracle.41918.736499826387].[none:STATE:nk]' value='[oracle.41918.748224247684].[none:STATE:nk]' />
+        <map key='[oracle.41918.736499826387].[none:ZIP:nk]' value='[oracle.41918.748224247684].[none:ZIP_CODE:nk]' />
+      </column-mapping>
+    </datasource-relationship>
+  </datasource-relationships>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='Sheet 1'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='TAX_STATS+ (C##CS347_ASL456)' name='oracle.41918.736499826387' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='oracle.41918.736499826387'>
+            <column aggregation='CountD' caption='Agi Stub' datatype='integer' datatype-customized='true' name='[AGI_STUB]' role='measure' type='quantitative'>
+            </column>
+            <column aggregation='CountD' datatype='integer' datatype-customized='true' name='[N1]' role='measure' type='quantitative'>
+            </column>
+            <column-instance column='[AGI_STUB]' derivation='None' name='[none:AGI_STUB:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[N1]' derivation='Sum' name='[sum:N1:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='annotation'>
+            <format attr='border-style' id='annotation_0' value='none' />
+            <format attr='border-style' id='annotation_3' value='none' />
+            <format attr='border-style' id='annotation_4' value='none' />
+            <format attr='border-style' id='annotation_5' value='none' />
+            <format attr='border-style' id='annotation_6' value='none' />
+            <format attr='border-style' id='annotation_7' value='none' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane>
+            <view>
+              <breakdown value='on' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <size column='[oracle.41918.736499826387].[sum:N1:qk]' />
+              <color column='[oracle.41918.736499826387].[sum:N1:qk]' />
+              <text column='[oracle.41918.736499826387].[none:AGI_STUB:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-labels-line-first' value='true' />
+                <format attr='mark-labels-line-last' value='true' />
+                <format attr='mark-labels-range-min' value='true' />
+                <format attr='mark-labels-range-max' value='true' />
+                <format attr='mark-labels-mode' value='all' />
+                <format attr='mark-labels-range-scope' value='pane' />
+                <format attr='mark-labels-range-field' value='' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows></rows>
+        <cols></cols>
+        <annotations>
+          <annotation class='point' id='0' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Agi Stub: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[none:AGI_STUB:qk]&gt;</run>
+              <run fontcolor='#787878'>&#10;Sum of N1: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[sum:N1:qk]&gt;</run>
+              <run fontname='Arial,sans-serif' fontsize='10'>&#10;1 = $1 under $25,000</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                      </x-fields>
+                      <y-fields>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[oracle.41918.736499826387].[none:AGI_STUB:qk]</field>
+                      <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>1</value>
+                    <value>112863570</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='19' y='-21' />
+          </annotation>
+          <annotation class='point' id='3' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Agi Stub: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[none:AGI_STUB:qk]&gt;</run>
+              <run fontcolor='#787878'>&#10;Sum of N1: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[sum:N1:qk]&gt;</run>
+              <run fontname='Arial,sans-serif' fontsize='10'>&#10;2 = $25,000 under $50,000</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                      </x-fields>
+                      <y-fields>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[oracle.41918.736499826387].[none:AGI_STUB:qk]</field>
+                      <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>2</value>
+                    <value>67664580</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='130' y='-20' />
+          </annotation>
+          <annotation class='point' id='4' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Agi Stub: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[none:AGI_STUB:qk]&gt;</run>
+              <run fontcolor='#787878'>&#10;Sum of N1: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[sum:N1:qk]&gt;</run>
+              <run fontname='Arial,sans-serif' fontsize='10'>&#10;3 = $50,000 under $75,000</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                      </x-fields>
+                      <y-fields>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[oracle.41918.736499826387].[none:AGI_STUB:qk]</field>
+                      <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>3</value>
+                    <value>38110070</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='17' y='-86' />
+          </annotation>
+          <annotation class='point' id='5' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Agi Stub: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[none:AGI_STUB:qk]&gt;</run>
+              <run fontcolor='#787878'>&#10;Sum of N1: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[sum:N1:qk]&gt;</run>
+              <run fontname='Arial,sans-serif' fontsize='10'>&#10;4 = $75,000 under $100,000</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                      </x-fields>
+                      <y-fields>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[oracle.41918.736499826387].[none:AGI_STUB:qk]</field>
+                      <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>4</value>
+                    <value>24218280</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-41' y='-47' />
+          </annotation>
+          <annotation class='point' id='6' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Agi Stub: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[none:AGI_STUB:qk]&gt;</run>
+              <run fontcolor='#787878'>&#10;Sum of N1: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[sum:N1:qk]&gt;</run>
+              <run fontname='Arial,sans-serif' fontsize='10'>&#10;5 = $100,000 under $200,000</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                      </x-fields>
+                      <y-fields>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[oracle.41918.736499826387].[none:AGI_STUB:qk]</field>
+                      <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>5</value>
+                    <value>31148020</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-24' y='61' />
+          </annotation>
+          <annotation class='point' id='7' mark-position='1' pullback='12' text-width='180'>
+            <formatted-text>
+              <run fontcolor='#787878'>Agi Stub: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[none:AGI_STUB:qk]&gt;</run>
+              <run fontcolor='#787878'>&#10;Sum of N1: </run>
+              <run bold='true'>&lt;[oracle.41918.736499826387].[sum:N1:qk]&gt;</run>
+              <run fontname='Arial,sans-serif' fontsize='10'>&#10;6 = $200,000 or more</run>
+            </formatted-text>
+            <point>
+              <visual-coordinate class='mark'>
+                <tuple-reference>
+                  <tuple-descriptor>
+                    <pane-descriptor>
+                      <x-fields>
+                      </x-fields>
+                      <y-fields>
+                      </y-fields>
+                    </pane-descriptor>
+                    <columns>
+                      <field>[oracle.41918.736499826387].[none:AGI_STUB:qk]</field>
+                      <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+                    </columns>
+                  </tuple-descriptor>
+                  <tuple>
+                    <value>6</value>
+                    <value>10263720</value>
+                  </tuple>
+                </tuple-reference>
+              </visual-coordinate>
+            </point>
+            <body x='-45' y='48' />
+          </annotation>
+        </annotations>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows>
+    <window class='schema' source-height='-1' />
+    <window auto-hidden='0' class='worksheet' maximized='1' name='Sheet 1'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card pane-specification-id='0' param='[oracle.41918.736499826387].[sum:N1:qk]' type='color' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='31'>
+            <card type='columns' />
+          </strip>
+          <strip size='31'>
+            <card type='rows' />
+          </strip>
+        </edge>
+      </cards>
+      <highlight>
+        <color-one-way>
+          <field>[oracle.41918.736499826387].[none:AGI_STUB:nk]</field>
+          <field>[oracle.41918.736499826387].[none:MEDIAN:nk]</field>
+          <field>[oracle.41918.736499826387].[none:N00101:nk]</field>
+          <field>[oracle.41918.736499826387].[none:N1:qk]</field>
+          <field>[oracle.41918.736499826387].[none:ZIPCODE:nk]</field>
+          <field>[oracle.41918.736499826387].[sum:N1:qk]</field>
+          <field>[oracle.41918.748224247684].[none:COMPLAINT_ID:ok]</field>
+          <field>[oracle.41918.748224247684].[none:ZIP_CODE:nk]</field>
+        </color-one-way>
+      </highlight>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='Sheet 1' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
